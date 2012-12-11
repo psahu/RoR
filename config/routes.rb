@@ -5,7 +5,7 @@ OmrailsPs::Application.routes.draw do
   root :to => 'staticpages#home'
 
   get "about" => "staticpages#about"
-  get "chome" => "staticpages#chome"
+  #get "chome" => "staticpages#chome"
 
   #get "staticpages/home"
 
