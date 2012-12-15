@@ -1,18 +1,25 @@
 <% if user_signed_in? %>
- <h1>Yippppeeee!!! You've signed in!!!!!</h1>
- <p> This is a members exclusive page, the content will be added soon. </p>
+ <h1>You're all set! </h1>
+ <h2> Welcome to Resolution Tracker! </h2>
+ <p> Please add your resolutions to the list below. Check in everyday to see how you're performing. You can also collaborate with similar minds and motivate each other to achieve your resolutions. Happy tracking! </p>
 <% else %>
 <div class="center hero-unit">
-    <h1>Welcome to One Month Rails</h1>
+    
 
     <h2>
-      You've found the home page for the
-      <a href="http://omrails.com/">One Month Rails</a>
-      first application. 
-
+      Ever wondered how to keep track your resolutions this year? 
     </h2>
+  
+     <p> 
+		Well, we're here to help. Please join our community and keep your resolutions this time. <br>
+
+     	This app was build by the help of <a href="http://omrails.com/">One Month Rails</a> class. 
+     </p> 
 
     <%= link_to "Sign up now!", new_user_registration_path, 
                                 class: "btn btn-large btn-primary" %>
 </div>
+
+<%= image_tag("background.jpg", class: "bg") %>
+
 <% end %>
